@@ -1,0 +1,146 @@
+.container{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 1f;
+    min-width: 30em;
+    min-height: 10em;
+    font-size: 16px;
+    color: black;
+    display: grid;
+    grid-template-columns: 2fr 9fr;
+    box-shadow: 0 20xp 40px rgba(0,0,0,0.2);
+
+}
+
+.tabs{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(48,47,47);
+}
+
+.letab{
+    height: 40%;
+    display: grid;
+    place-items: center;
+    font-size: 1.2em;
+    font-weight: 600;
+    cursor:pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+    background-color: rgba(99, 99, 99, 0.8);
+    color: rgb(241, 241, 241);
+    /*background-color: rgb(170, 165, 165);*/
+    width: 100%;
+    font-weight: 100;
+}
+
+.tab-content{
+
+    /*background-color: rgb(200,195,195);*/
+    padding: 1em 1.5em;
+}
+
+.HeaderPoint{
+    font-size: 2.3em;
+    margin-bottom: 0.5em;
+    color: #000024;
+}
+
+.tab-content h3{
+    font-size: 1em;
+    text-align: justify;
+    margin: 1em;
+    line-height:1.9;
+    letter-spacing: 0.4px;
+    color: #202238;
+}
+
+.tab-content div{
+    display:none;
+}
+
+.tab-content .active{
+    display: block;
+}
+
+.tabs .active{
+    background-color: rgba(255,255,255,0.8);
+    /*background-color: rgb(200,195,195);*/
+    color:#3c48c8;
+    border-right-style: solid;
+    border-right-color: #3c48c8;
+    border-right-width: 2px;
+}
+
+.letab:hover{
+    opacity: 0.7;
+    scale: 1.03;
+}
+
+.letab:active{
+    opacity: 1;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+    border-left-style: solid;
+    border-left-color: rgba(0,0,0,0.2);
+    border-left-width: 2px;
+}
+
+/*Note: PLEASE DO NOT USE THE FADE CLASS ON ANYTHING, THIS IS ONLY FOR THE BUTTONS FOR THE CLASS*/
+
+
+.fade div{
+    display: block;
+    margin-left: 5px;
+}
+.contentTitle{
+    margin-top: 10px;
+    margin-bottom:10px;
+    margin-left: 10px;
+    border-top-color:rgba(0,0,0,0.2);
+    border-top-style: solid;
+}
+
+.fade div h3:nth-last-child(1){
+    border-bottom-style: solid;
+    border-bottom-color: rgba(0,0,0,0.2);
+}
+
+.PracticeExample{
+    margin-left: 10px;
+}
+  
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+#Hintparagraph{
+    display: block;
+    visibility: visible;
+    background-color:rgba(190, 190, 190, 0.736);
+}
+
+#Hintbutton{
+    background-color:rgba(38, 76, 113, 0.619);
+    color:azure;
+}
+
+.hint-button {
+    background-color:rgba(38, 76, 113, 0.619);
+    color: azure;
+}
+
+.hint-text {
+    background-color: rgba(38, 76, 113, 0.619);
+    color: azure;
+}
