@@ -1,5 +1,4 @@
 const load = document.querySelector(".loading");
-    load.classList.add("loading-hidden")
     window.addEventListener("load", () => {
       const loader = document.querySelector(".loader");
   

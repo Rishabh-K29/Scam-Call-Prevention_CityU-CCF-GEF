@@ -8,6 +8,22 @@
   --color-gray: #e5e7eb;
   --color-dark-gray: #9da3ae;
   --color-pink: #edadd2;
+  z-index: 3;
+
+  position: relative;
+  top: 50px; 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.formtext {
+  position: relative;
+  z-index: 3;
+  background-color: rgba(0, 0,0,0.5);
+  mix-blend-mode: lighten;
+  margin-top: 4.5em;
 }
 
 .formcarry-container {
@@ -18,6 +34,8 @@
   max-width: var(--c-max-width);
   display: block;
   margin: 10vh auto 0 auto;
+  z-index: 3;
+
 }
 
 .formcarry-form label {
@@ -27,6 +45,7 @@
   cursor: pointer;
   font-size: 16px;
   font-weight: 700;
+  z-index: 3;
 }
 
 .formcarry-form input,
@@ -41,17 +60,20 @@
   outline: none;
   border-radius: 8px;
   color: var(--color-dark-gray);
+  z-index: 3;
 }
 
 .formcarry-form input:focus,
 .formcarry-form textarea:focus {
   background-color: #fff;
   color: var(--color-dark-gray);
+  z-index: 3;
 }
 
 .formcarry-form input:focus:required:invalid {
   border-color: var(--color-pink);
   background-color: #fff;
+  z-index: 3;
 }
 
 .formcarry-form button {
@@ -67,10 +89,12 @@
   font-size: 18px;
 
   transition: 300ms all;
+  z-index: 3;
 }
 
 .formcarry-form button:hover {
   background-color: var(--color-light-blue);
+  z-index: 3;
 }
 
 .formcarry-alert {
@@ -81,16 +105,20 @@
   font-weight: 400;
   margin-top: 12px;
   display: none;
+  z-index: 3;
 }
 
 .formcarry-alert.visible {
   display: block;
+  z-index: 3;
 }
 
 .formcarry-alert.success {
   background: #69cf9d;
+  z-index: 3;
 }
 
 .formcarry-alert.error {
   background: #de524c;
+  z-index: 3;
 }
