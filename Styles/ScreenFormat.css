@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Poppins:ital,wght@0,300;0,400;0,600;1,100;1,300;1,600&family=Tilt+Prism&display=swap');
+
+body::-webkit-scrollbar{
+    display:none;
+}
+
+h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.codeDiv{
+    background: rgba(25, 25, 25, 0.85);
+    color: rgba(255, 255, 255,0.9);
+}
+
+.showcase{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 0);
+    padding: 0;
+}
+
+.pageheader{
+    z-index: 1;
+}
+
+.main_text{
+    background-color: rgb(85, 84, 84);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    min-width: 100%;
+}
+
+.footer{
+    background-color: rgb(42, 42, 42);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    min-height: 10vh;
+    width: 100%;
+    font-size: 1em;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+.main_text h2{
+    text-align: center;
+    opacity: 1;
+    z-index: 2;
+}
+
+.LectureButton{
+    z-index: 2;
+    opacity: 1;
+    transition: all 0.1s ease;
+    display: flex;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+
+.bottombuttons{
+    margin: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-decoration: none;
+    color: rgb(225, 225, 225);
+    background-color: rgb(99, 99, 99);
+}
+
+.LectureButton_Right{
+    z-index: 2;
+    opacity: 1;
+    position: fixed(0, 0, 0, 0);
+}
+
+.Lecture{
+    background-color: rgb(41, 40, 40);
+    margin: auto;
+    text-align: center;
+    border-style: none;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.Lecture div h2{
+    font-size: 1.5em;
+    text-align: left;
+    padding-left: 5px;
+    float:left;
+    color: white;
+    filter: brightness(90%);
+    user-select:none;
+}
+
+.Lecture div button{
+    float:right;
+    text-align: center;
+    height: 20px;
+    width: 20px;
+    font-size: 20px;
+    margin-right: 5px;
+    border-style: none;
+    background-image: url("../Imgs_and_stuff/pngegg.png");
+    background-repeat: no-repeat;
+    background-size: 35px;
+    background-position: center;
+    cursor: pointer;
+    background-color: transparent;
+    margin-top: 2px;
+    transition: 0.3s ease;
+    user-select: none;
+}
+
+.Lecture div button:hover{
+    opacity:0.5;
+}
+
+.LectureVideo{
+    width: 30em;
+    height:20em;
+    border-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+dialog::-webkit-scrollbar{
+    overflow: hidden;
+    display:none;
+}
+
+dialog::backdrop{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+dialog{
+    opacity:0;
+    scale:0;
+    transition: all 1s ease-in-out;
+    position: fixed;
+    display: none;
+}
+dialog[open]{
+    opacity: 1;
+    scale: 1;
+    pointer-events: inherit;
+    text-align: center;
+}
+
+.showcase video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.lessonformat{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(87, 87, 87, 0.55);
+}
+
+.HeaderPoint{
+    font-size: 3em;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.LectureButton:hover{
+    opacity: 0.8;
+    scale: 1.1;
+}
+
+.LectureButton:active{
+    opacity: 0.3;
+}
+
+.furtherReadingLinks{
+    transition: 0.2s;
+    padding-left: 1em;
+    display: inline-block;
+}
+.furtherReadingLinks:hover{
+    color: red;
+}
+
+.furtherReadingLinks:active{
+    opacity: 0.6;
+}
+
+.furtherReadingLinks:visited{
+    color: purple;
+    transition: 0.2s;
+}
+
+.furtherReadingLinks:visited:hover{
+    color: red;
+}
+
+.furtherReadingLinks:link{
+    color: blue;
+}
+
+@media (max-width: 991px) {
+
+    .text h2{
+        font-size: 2em;
+    }
+
+    .text h3{
+        font-size: 2em;
+    }
+
+    .main_menu{
+        padding-top: 15px;
+    }
+
+    .main_menu a {
+        font-size: 18px;
+    }
+}
