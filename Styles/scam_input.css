@@ -1,0 +1,36 @@
+.searchcontainer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ebebeb;
+    font-size: 16px;
+    margin-right: 5px;
+    background-color: rgb(200, 200, 200);
+}
+
+#button {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: gray;
+}
+
+#button:hover {
+    /*animation: buttonhover 0.5s linear;*/
+    background-color: #4CAF50;
+}
+
+/*@keyframes buttonhover {
+    0% {font-size: 16;}
+    100% {font-size: 32;
+        background-color: #4CAF50;
+    }
+}*/
