@@ -144,3 +144,9 @@
     background-color: rgba(38, 76, 113, 0.619);
     color: azure;
 }
+
+input {
+    padding: .25em;
+    width: 100%;
+    font-size: 14pt;
+  }
